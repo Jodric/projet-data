@@ -26,6 +26,10 @@ html {
 	list-style: none;
   }
 
+  a{
+	  text-decoration: none;
+  }
+
 .title--big{
     font-size: 45px;
     font-weight: 700;
@@ -69,9 +73,19 @@ p, figcaption, .list__el, .tab__item, .foot__el{
 /*-------------------play-----------------*/
 
 .divIntro{
-	display: block;
+	
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 300px);
     max-width: 75ch;
-    margin-left: 90px;
+}
+
+.title--post{
+	font-size: 34px;
+    font-weight: 700;
+    grid-column-end: 3;
+    grid-column-start: 2;
+    margin-top: 76px;
 }
 
 
@@ -141,6 +155,20 @@ a:hover{
     padding: 81px;
 }
 
+.nl-submit{
+	line-height: 3;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    background: #76C3BD;
+    color: #fff;
+    padding: 0 1em 0 0;
+    font-size: 80%;
+    font-weight: bold;
+    letter-spacing: 3px;
+	border-style: dashed;
+}
+
 /*---------------------PLAY-------------------------*/
 
 
@@ -150,9 +178,12 @@ a:hover{
 /* general style for the form */
 .nl-form {
 	width: 100%;
-	margin: 0.3em auto 0 auto;
-	font-size: large;
-	line-height: 1.5;
+    margin: 0.3em auto 0 auto;
+    font-size: large;
+    line-height: 1.5;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin-top: -154px;
 }
 
 .nl-form ul {
@@ -352,7 +383,8 @@ input:focus::-ms-input-placeholder {
 
 /* submit button */
 .nl-submit-wrap {
-	margin-top: 0.4em;
+	margin-top: 1.4em;
+	text-align: end;
 }
 
 .nl-form .nl-submit {
@@ -363,7 +395,7 @@ input:focus::-ms-input-placeholder {
 	background: #76C3BD;
 	color: #fff;
 	padding: 0 1em 0 0;
-	font-size: 40%;
+	font-size: 80%;
 	font-weight: bold;
 	letter-spacing: 3px;
 }
@@ -460,6 +492,15 @@ footer{
     margin-left: 5px;
 }
 
+
+
+/*-------------------------grid-----------------------*/
+
+// play
+
+
+
+
 .darkm{
     
     position: relative;
@@ -467,5 +508,3 @@ footer{
     margin-right: 20px;
     margin-top: 20px;
 }
-
-/
