@@ -24,8 +24,8 @@
         <nav class="nav">
             <ul class="nav__list">
                 <li class="home"> <a class="nav__el--actif" href="index.html"> accueil </a> </li> 
-                <li class="play"> <a class="nav__el" href="#"> mon experience </a></li>
-                <li class="formulaire"> <a class="nav__el" href="#"> ressources </a></li>
+                <li class="play"> <a class="nav__el" href="#"> play </a></li>
+                <li class="formulaire"> <a class="nav__el" href="#"> formulaire </a></li>
 
             </ul>
         </nav>
@@ -34,14 +34,52 @@
 
   <main class="main">
     <div class="container__main">
-
-      <h1 class="title title--big"> titre du projet</h1>
-      <p class="p--marg">
-        [FREQUENCE] mon pote m’appelle pour aller [LIEU], avant de lui répondre je regarde ce qu’il reste
-        dans mon portefeuille [BUDGET]. Ça devrait le faire, une fois arrivé je vais chercher un [ALCOOL] 
-        mais vu ma gueule d’ange on me demande mon âge. “Oui j’ai [AGE] c’est écrit là”. 
-      </p>
-      <button class="btn">commencez l'experience</button>
+      <form id="nl-form" class="nl-form">
+        <select>
+          <option value="1" selected>FREQUENCE</option>
+          <option value="2">Une fois par an</option>
+          <option value="3">Une fois par mois </option>
+          <option value="4">Chaque mardi</option>
+          <option value="2">Un jour sur deux</option>
+          <option value="2">Tous les jours</option>
+        </select>
+         mon pote m’appelle pour aller
+        <select>
+          <option value="1" selected>LIEU</option>
+          <option value="2">au bar</option>
+          <option value="3">à la citadelle </option>
+          <option value="4">dans un kot </option>
+          <option value="2">dans les cercles</option>
+        </select>
+        avant de lui répondre je regarde ce qu’il reste dans mon portefeuille
+        
+        <select>
+          <option value="1" selected>BUDGET</option>
+           <option value="1">moins de 10 euro</option>
+           <option value="2">cool un billet de 20</option>
+           <option value="3">je vois 30 euros</option>
+           <option value="3">c'est la fete</option>
+        </select>
+        Ça devrait le faire, une fois arrivé je vais chercher un 
+        
+        <select>
+          <option value="1" selected>ALCOOL</option>
+           <option value="1">bierre</option>
+           <option value="2">vin</option>
+           <option value="3">whisky</option>
+        </select>
+        mais vu ma gueule d’ange on me demande mon âge. “Oui j’ai
+        <select>
+          <option value="1" selected>AGE</option>
+           <option value="1">18-21</option>
+           <option value="2">22-25</option>
+           <option value="3">>25</option>
+        </select>
+        c’est écrit là”. 
+        <div class="nl-submit-wrap">
+          <button class="nl-submit" type="submit">validez</button>
+       
+      </form>
     </div>
   </main>
 
@@ -54,9 +92,9 @@
   
   <footer class="footer">
        <div class="container_footer">
-       <div class="button_dm"> <button class="darkm">  <img  src="assets/image/dm.png" alt="dm"  width="20"  height="20"></button></div>
+       <div class="button_dm"> <button class="darkm">  <img  src="assets/images/dm.png" alt="dm"  width="20"  height="20"></button></div>
        <div class="el_logo">
-           <a href="http://dwm.re/"><img src="assets/image/logo-dwt.svg" alt="logo_dwt" width="70" height="70"></a>
+           <a href="http://dwm.re/"><img src="assets/images/logo-dwt.svg" alt="logo_dwt" width="70" height="70"></a>
        </div>
        <div class="copyrith">
            <a href="#">copyrith</a>
