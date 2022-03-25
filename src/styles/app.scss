@@ -6,8 +6,74 @@ body{
     background-color: #4A4A4A;
     line-height: 1;
     width: 100vw;
+	color: #fff;
 
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+@font-face {
+    font-family: 'Overpass', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap');
+  }
+@font-face {
+    font-family: 'Chivo', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;display=swap');
+  }
+
+  ol, ul {
+	list-style: none;
+  }
+
+.title--big{
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.title--medium{
+    font-size: 31px;
+    font-weight: 700;
+    border-left: 6px solid #2694BF;
+    padding-left: 9px;
+    margin-bottom: 30px;
+}
+
+.title--right{
+    text-align: right;
+    border-left: none;
+    padding-left: 0px;
+    padding-right: 9px;
+    border-right: 6px solid #2694BF;
+}
+
+
+.title--small{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+p, figcaption, .list__el, .tab__item, .foot__el{
+    font-family: 'Overpass', cursive;
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 55ch;
+}
+
+.p--marg{
+    margin-bottom: 30px;
+}
+
+/*-------------------play-----------------*/
+
+.divIntro{
+	display: block;
+    max-width: 75ch;
+    margin-left: 90px;
+}
+
 
 
 /*-------------------header-------------*/
@@ -52,6 +118,11 @@ a:hover{
     
 }
 
+
+/*---------------------ACCUEIL-------------*/
+
+
+
 /*-----------------MAIN----------------------*/
 
 .main{
@@ -70,6 +141,11 @@ a:hover{
     padding: 81px;
 }
 
+/*---------------------PLAY-------------------------*/
+
+
+
+/*------------------------form----------------------*/
 
 /* general style for the form */
 .nl-form {
@@ -392,8 +468,4 @@ footer{
     margin-top: 20px;
 }
 
-/* ----------------------- PLAY ONE  ----------------------- */
-
-.divIntro{
-    color: #CEDFBD;
-}
+/
