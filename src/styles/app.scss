@@ -38,7 +38,6 @@ html {
 .title--medium{
     font-size: 31px;
     font-weight: 700;
-    border-left: 6px solid #2694BF;
     padding-left: 9px;
     margin-bottom: 30px;
 }
@@ -68,6 +67,10 @@ p, figcaption, .list__el, .tab__item, .foot__el{
 
 .p--marg{
     margin-bottom: 30px;
+}
+
+.nav__button{
+	display: none;
 }
 
 /*-------------------play-----------------*/
@@ -135,13 +138,64 @@ a:hover{
 
 /*---------------------ACCUEIL-------------*/
 
+.divFirst{
+	display: flex;
+    margin-left: 38px;
+    margin-top: 70px;
+}
 
+
+.title--left{
+	position: absolute;
+    margin-top: -30px;
+	border-left: 6px solid #2694BF;
+}
+
+.figure__img--big{
+	margin-top: -50px;
+}
+
+.title--rigth{
+	position: absolute;
+    margin-top: -30px;
+	border-right: 6px solid #2694BF;
+	padding-right: 9px;
+	margin-left: 500px;
+}
+
+.divTwo{
+	display: flex;
+	float: right;
+    margin-right: 50px;
+    margin-top: 75px;
+}
+
+.list{
+	display: inline-flex;
+	flex-wrap: wrap;
+}
+
+.divThree{
+	display: inline-block;
+}
+
+.title--center{
+      text-align: center;
+}
+
+
+.list__el{
+	margin-right: 9px;
+}
 
 /*-----------------MAIN----------------------*/
 
 .main{
     background-image: url(../assets/images/affiche.png);
     background-size: cover;
+	background-position: 0 -100px;
+    background-position-x: 0px;
+    background-position-y: -100px;
     background-repeat: no-repeat;
     height: 100vh;
     margin-top: -24px;
@@ -494,12 +548,113 @@ footer{
 
 
 
-/*-------------------------grid-----------------------*/
-
-// play
 
 
+@media(max-width:700px){
 
+
+/*burger menu*/
+
+*{
+	margin:0;
+	padding:0;
+	font-size: large;
+  }
+
+
+
+
+.nav__button {
+	display: block;
+background-color: #da3d22;
+border: none;
+color: white;
+font-weight: bolder;
+outline: 0;
+padding: 5px;
+position: relative;
+float: right;
+top: 15px;
+z-index: 20;
+}
+
+
+.nav__button::after{
+content:'×';
+}
+.nav__button.close{
+color:#fff;
+background:#000;
+}
+
+
+
+.nav__button.close::after{
+content:'≡';
+}
+
+.nav{
+transition:transform .5s;
+position:relative;
+width:100%;
+max-width:480px;
+transform:translateY(-300px);
+
+
+
+
+}
+.nav.show-menu{
+height: 100%;
+background-color: black;
+transform: translateX(0%);
+transition: transform 0.2s ease-out;
+display: flex;
+flex-direction: column;
+position: fixed;
+
+}
+
+
+.nav__list {
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+font-size: x-large;
+text-decoration: none;
+color: wheat;
+list-style-type: none;
+}
+
+
+.title--rigth{
+margin-left: 300px;
+margin-top: -90px;
+}
+
+}
+
+.title--left{
+margin-top: -70px;
+}
+
+
+.divFirst{
+	
+}
+
+
+.divTwo{
+	
+}
+
+
+
+
+
+@media(max-width:700px){
+	
+}
 
 .darkm{
     
@@ -508,3 +663,10 @@ footer{
     margin-right: 20px;
     margin-top: 20px;
 }
+
+
+
+
+
+
+

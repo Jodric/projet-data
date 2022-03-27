@@ -3,4 +3,13 @@ import { PixiPlugin } from "gsap/PixiPlugin.js";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
 
 
-console.info('Hello world');
+// burger menu
+
+var menuButton = document.querySelector('.nav__button');
+var menu = document.querySelector('.nav');
+
+
+menuButton.addEventListener('click',function(){
+  menu.classList.toggle('show-menu');
+  menuButton.classList.toggle('close');
+});
