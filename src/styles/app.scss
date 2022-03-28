@@ -496,6 +496,38 @@ input:focus::-ms-input-placeholder {
 	transition-delay: 0s;
 }
 
+/*--------------formulaire-----------*/
+
+.section2{
+	padding-left: 7%;
+padding-right: 7%;
+}
+
+.title--left2{
+	position: absolute;
+    margin-top: -30px;
+	border-left: 6px solid #2694BF;
+	margin-top: -70px;
+}
+
+
+.section2__content1{
+	display: flex;
+	margin-top: 80px;
+}
+
+.section2__content2{
+	background-color: coral;
+	width: 50%;
+}
+
+.section2__content3{
+	display: flex;
+    text-align: center;
+    margin-left: 85px;
+    justify-content: space-around;
+}
+
 
 
 

@@ -13,3 +13,11 @@ menuButton.addEventListener('click',function(){
   menu.classList.toggle('show-menu');
   menuButton.classList.toggle('close');
 });
+
+
+
+// année
+
+
+let annee = new Date().getFullYear();
+document.querySelector(".annee").innerHTML = annee;
