@@ -579,10 +579,10 @@ footer{
 }
 
 
+/*----------tablette---------------*/
 
 
-
-@media(max-width:700px){
+@media screen and (max-width: 700px){
 
 
 /*burger menu*/
@@ -664,28 +664,114 @@ margin-left: 300px;
 margin-top: -90px;
 }
 
-}
-
 .title--left{
-margin-top: -70px;
+	margin-top: -70px;
+	}
+	
+	
+	.figure2 img{
+	width: 213px;
+	height: 226px;
+	}
+	
+	.section2__content3{
+		margin-top: 6%;
+		margin-bottom: 6%;
+	}
+	
+	.title--post{
+		grid-column-end: 2;
+		grid-column-start: 1;
+	}
+	
+	.nl-form{
+		grid-column-start: 1;
+		grid-column-end: 3;
+		margin-left: 5px;
+	}
+
 }
 
 
-.divFirst{
+
+
+
+
+/*----------------------- mobile----------------*/
+
+@media only screen and (min-width: 285px) and (max-width: 520px){
+
+
+
+	.nav__button{
+		display: block;
+	}
+
 	
+	.divFirst{
+	display: block;
+	}
+	
+	
+	.divTwo{
+		display: block;
+		margin-top: 0;
+	}
+.figure{
+	margin-top: 60px;
+	margin-left: 12%;
+}	
+
+.title--rigth{
+	margin-left: 0;
+	margin-top: 5%;
+}
+
+.p--post{
+	margin-top: 28%;
+    margin-left: 2%;
+}
+
+.title--center{
+	margin-top: 5%;
+	margin-left: 25%;
+
+}
+
+.list__el img{
+	width: 105%;
+}
+
+.list{
+	display: flex;
+	flex-wrap: inherit;
+	margin-left: 5px;
+}
+
+.divIntro{
+	display: grid;
+    grid-template-columns: repeat(1, 300px);
+    grid-template-rows: repeat(2, 300px);
+    max-width: 36ch;
+}
+
+.figure2 img {
+width: 100%;
+margin-top: 13%;
+
+};
+
+.section2__content1{
+	display: block;
 }
 
 
-.divTwo{
-	
+.section2__content2 {
+    background-color: coral;
+    width: 100%;
+	margin-top: 15%;
 }
 
-
-
-
-
-@media(max-width:700px){
-	
 }
 
 .darkm{
