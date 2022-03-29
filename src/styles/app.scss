@@ -629,7 +629,6 @@ content:'≡';
 transition:transform .5s;
 position:relative;
 width:100%;
-max-width:480px;
 transform:translateY(-300px);
 
 
@@ -696,9 +695,21 @@ margin-top: -90px;
 		grid-column-end: 3;
 		margin-left: 5px;
 	}
+	
+	.nl-form .nl-submit{
+		position: static;
+	}
+
+	.nl-submit{
+		position: static;
+	}
 
 	.title--left2{
 		position: static;
+	}
+
+	.list{
+		margin-left: 22px;
 	}
 
 	
@@ -736,7 +747,10 @@ margin-top: -90px;
 }	
 
 .title--rigth{
-	margin-left: 0;
+	position: static;
+	margin-left: 4px;
+    margin-top: 5%;
+    margin-right: -37px;
 	margin-top: 5%;
 }
 
@@ -749,6 +763,10 @@ margin-top: -90px;
 	margin-top: 5%;
 	margin-left: 25%;
 
+}
+
+.title--left{
+	position: static;
 }
 
 .list__el img{
