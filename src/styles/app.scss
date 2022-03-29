@@ -30,6 +30,11 @@ html {
 	  text-decoration: none;
   }
 
+  .logo_el{
+    margin-left: 30px;
+    margin-top: 4px;
+}
+
 .title--big{
     font-size: 45px;
     font-weight: 700;
@@ -42,13 +47,7 @@ html {
     margin-bottom: 30px;
 }
 
-.title--right{
-    text-align: right;
-    border-left: none;
-    padding-left: 0px;
-    padding-right: 9px;
-    border-right: 6px solid #2694BF;
-}
+
 
 
 .title--small{
@@ -79,7 +78,7 @@ p, figcaption, .list__el, .tab__item, .foot__el{
 	
     display: grid;
     grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(2, 300px);
+    grid-template-rows: repeat(3, 300px);
     max-width: 75ch;
 }
 
@@ -157,10 +156,11 @@ a:hover{
 
 .title--rigth{
 	position: absolute;
-    margin-top: -30px;
+    margin-top: -60px;
 	border-right: 6px solid #2694BF;
 	padding-right: 9px;
 	margin-left: 500px;
+	
 }
 
 .divTwo{
@@ -656,6 +656,13 @@ font-size: x-large;
 text-decoration: none;
 color: wheat;
 list-style-type: none;
+margin-top: 15px;
+margin-right: 0;
+}
+
+.play{
+	margin-bottom: 18px;
+    margin-top: 18px;
 }
 
 
@@ -689,6 +696,12 @@ margin-top: -90px;
 		grid-column-end: 3;
 		margin-left: 5px;
 	}
+
+	.title--left2{
+		position: static;
+	}
+
+	
 
 }
 
