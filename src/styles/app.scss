@@ -1,13 +1,69 @@
 @import 'utils/variables';
 @import 'components/type';
 @import '../../node_modules/modern-normalize/modern-normalize';
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Sen:wght@400;700;800&display=swap');
+ 
+:root{
+    --color-bg: #1B1B1B;
+    --color-text: #fff;
+    --color-primary: #CEDFBD;
+    --color-secondary: #;
+    --font-primary:'Palette Mosaic', sans-serif;
+    --font-secondary: 'Sen', sans-serif;
+}
+[data-theme='eau']{
+    --color-text: #fff;
+    --color-primary: #dcfcf8;
+    --color-secondary: #;
+}
+[data-theme='vodka']{
+    --color-text: #fff;
+    --color-primary: #A07B32;
+    --color-secondary: #;
+}
+[data-theme='biere']{
+    --color-text: #fff;
+    --color-primary: #D0B71C;
+    --color-secondary: #;
+}
+[data-theme='special']{
+    --color-text: #fff;
+    --color-primary: #C78D46;
+    --color-secondary: #;
+}
+[data-theme='cocktail']{
+    --color-text: #fff;
+    --color-primary: #02C1C4;
+    --color-secondary: #;
+}
+[data-theme='tequila']{
+    --color-text: #fff;
+    --color-primary: #7EC209;
+    --color-secondary: #;
+}
+[data-theme='rhum']{
+    --color-text: #fff;
+    --color-primary: #FF7047;
+    --color-secondary: #;
+}
+[data-theme='whisky']{
+    --color-text: #fff;
+    --color-primary: #C78D46;
+    --color-secondary: #;
+}
+[data-theme='pastis']{
+    --color-text: #fff;
+    --color-primary: #FED792;
+    --color-secondary: #;
+}
 
 body{
-    background-color: #4A4A4A;
-    line-height: 1;
+    background-color: var(--color-bg);
+	color: var(--color-text);
+    line-height: 1.4;
     width: 100vw;
-	color: #fff;
-
+	font-family: var(--font-secondary);
+    
 }
 
 html {
@@ -28,6 +84,7 @@ html {
 
   a{
 	  text-decoration: none;
+	  color: #ffb093;
   }
 
   .logo_el{
@@ -36,12 +93,11 @@ html {
 }
 
 .title--big{
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 700;
 }
 
 .title--medium{
-    font-size: 31px;
     font-weight: 700;
     padding-left: 9px;
     margin-bottom: 30px;
@@ -58,7 +114,6 @@ html {
 }
 
 p, figcaption, .list__el, .tab__item, .foot__el{
-    font-family: 'Overpass', cursive;
     font-size: 16px;
     line-height: 28px;
     max-width: 55ch;
@@ -66,6 +121,8 @@ p, figcaption, .list__el, .tab__item, .foot__el{
 
 .p--marg{
     margin-bottom: 30px;
+	color: white;
+
 }
 
 .nav__button{
@@ -83,9 +140,8 @@ p, figcaption, .list__el, .tab__item, .foot__el{
 }
 
 .title--post{
-	font-size: 34px;
     font-weight: 700;
-    grid-column-end: 3;
+    grid-column-end: 4;
     grid-column-start: 2;
     margin-top: 76px;
 }
@@ -214,8 +270,8 @@ a:hover{
     text-transform: uppercase;
     cursor: pointer;
     position: relative;
-    background: #76C3BD;
-    color: #fff;
+    background: #06326b;
+    color: #ffb093;
     padding: 0 1em 0 0;
     font-size: 80%;
     font-weight: bold;
@@ -284,16 +340,16 @@ a:hover{
 .nl-form select  {
 	line-height: inherit;
 	display: inline-block;
-	color: #b14943;
+	color: #ffb093;
 	cursor: pointer;
-	border-bottom: 1px dashed #b14943;
+	border-bottom: 1px dashed #ffb093;
 }
 
 /* drop-down list / text element */
 .nl-field ul {
 	position: absolute;
 	visibility: hidden;
-	background: #76C3BD;
+	background: #06326b;
 	left: -0.5em;
 	top: 50%;
 	font-size: 80%;
@@ -446,8 +502,8 @@ input:focus::-ms-input-placeholder {
 	text-transform: uppercase;
 	cursor: pointer;
 	position: relative;
-	background: #76C3BD;
-	color: #fff;
+	background: #06326b;
+	color: #ffb093;
 	padding: 0 1em 0 0;
 	font-size: 80%;
 	font-weight: bold;
@@ -456,11 +512,9 @@ input:focus::-ms-input-placeholder {
 
 .nl-submit:before {
 	content: "\e001";
-	color: #fff;
 	float: left;
 	padding: 0 0.7em;
 	margin: 0 0.8em 0 0;
-	background: #69B1A9;
 }
 
 .no-touch .nl-form .nl-submit:hover,
@@ -582,7 +636,7 @@ footer{
 /*----------tablette---------------*/
 
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 860px){
 
 
 /*burger menu*/
@@ -686,7 +740,7 @@ margin-top: -90px;
 	}
 	
 	.title--post{
-		grid-column-end: 2;
+		grid-column-end: 3;
 		grid-column-start: 1;
 	}
 	
